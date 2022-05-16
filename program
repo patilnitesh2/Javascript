@@ -1,0 +1,27 @@
+<html>
+<body>
+    <script>
+        var arr = [5, 6, 9, 1, 4];
+        var sum = 0, sum1 = 0, sum2 = 0;
+        var len = arr.length;
+        for (var i = 0; i < len; i++) {
+            sum += arr[i];
+        }
+        var i = 0;
+        while (i < len) {
+            sum1 += arr[i];
+            i++;
+        }
+        var i = 0;
+        do {
+            sum2 += arr[i];
+            i++;
+
+        } while (i < len);
+
+        document.write("The Sum Of loop is =" + sum +);
+        document.write("The Sum Of while loop is =" + sum1 +);
+        document.write("The Sum Of do while loop is =" + sum2);
+    </script>
+</body>
+</html>
