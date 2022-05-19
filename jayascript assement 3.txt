@@ -1,0 +1,88 @@
+javascript 3
+1) program
+class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+}
+
+const obj = new Rectangle(23, 28);
+obj.height;
+obj.width;
+console.log("Rectangle of height is:" +obj.height+ "Rectangle of width is:" +obj.width);
+obj.height = 44;
+obj.width = 55;
+console.log("after Rectangle of height is:" +obj.height+  "after Rectangle of width is:" +obj.width); 
+
+2) program
+class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+}
+
+Rectangle.prototype.area = 150;
+var a = new Rectangle();
+console.log(a.area);
+
+3) program
+class Rectangle {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+  }
+}
+
+Rectangle.prototype.area = 150;
+var a = new Rectangle();
+console.log(a.area);
+
+var a1 = new Rectangle(4,5);  
+a1.height=50;
+var a2 = new Rectangle(8,9);
+
+console.log("Area :",a.area);
+
+
+4) program
+var value={
+    firstName: "mahendra",
+    lastName: "singh"
+};
+console.log(value);  
+
+value.lastName="dhoni";
+console.log(value);
+
+5) program
+var value={
+    firstName: "mahendra",
+    middleNmae: "msdhoni",
+    lastName: "singh"
+};
+console.log(value);  
+
+value.middleName="pansingh";
+console.log(value);
+6) program
+var value={
+    firstName: "mahendra",
+    middleNmae: "msdhoni",
+    lastName: "singh"
+};
+var obj =eval(value);
+
+console.log(eval(obj)); 
+
+obj.middleName="pansingh";
+console.log(eval(value));
+7) program
+const text = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
+const obj = JSON.parse(text);
+obj.birth = new Date(obj.birth);
+
+document.getElementById("demo").innerHTML = obj.name + ", " + obj.birth;
+
+
