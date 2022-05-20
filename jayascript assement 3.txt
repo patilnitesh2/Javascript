@@ -85,4 +85,63 @@ obj.birth = new Date(obj.birth);
 
 document.getElementById("demo").innerHTML = obj.name + ", " + obj.birth;
 
+1st task)
+
+function Person(fName,lName,age,skills,dateOfbirth,address,married,profession)
+{
+    this.fName = fName;
+    this.lName = lName;
+    this.age = age;
+    this.skills = skills;
+    this.dateOfbirth = dateOfbirth;
+    this.address = address;
+    this.married = married;
+    this.profession = profession;
+}
+
+Person1 = new Person("Abhishek","wajalwar",25,"python","03/04/1997","amravati","Not","Engeneer");
+Person2 = new Person("Yogesh","Giri",25,"java","24/07/1997","chandhur","Not","Engeneer");
+
+console.log(Person1);
+console.log(Person2);
+
+print=function()       
+{
+    console.log(Person1);
+    console.log(Person2);
+}();
+
+2nd task)
+
+function Person(fName,lName,age,skills,dateOfbirth,address,married,profession)
+{
+    this.fName = fName;
+    this.lName = lName;
+    this.age = age;
+    this.skills = skills;
+    this.dateOfbirth = dateOfbirth;
+    this.address = address;
+    this.married = married;
+    this.profession = profession;
+}
+abhi = new Person("Abhishek","wajalwar",25,"python","03/04/1997","amravati","Not","Engeneer");
+yogi = new Person("Yogesh","Giri",25,"java","24/07/1997","chandhur","Not","Engeneer");
+kartik= new Person("kartik","bhature",27,"cloud","03/04/1994","amravati","Not","Engeneer");
+
+//aradya = new Person("Aradya","patil",25,"python","03/04/1997","pune","Not","Engeneer");
+
+var abhi = Object.create(kartik);
+var yogi = Object.create(abhi);
+//var aradya = object.create(abhi)
+print = function()
+{
+    console.log(abhi);
+    console.log(yogi.lastName);
+    console.log(kartik.address);
+    console.log(abhi.lastName);
+    //console.log(aradya.city);
+    //console.log(aradya.profession);
+
+}();
+
 
