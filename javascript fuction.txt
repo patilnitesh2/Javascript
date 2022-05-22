@@ -1,0 +1,46 @@
+fuction programing
+1) program
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        var Number = window.prompt("Enter the Number :");
+
+        var output = composedValue(Number);
+        document.write("output value is:"+output);
+
+        function composedValue(x) {
+            return (square(double(x)));
+        }
+        function square(x) {
+            return (x * x);
+        }
+
+        function double(x) {
+            return (x * 2);
+        }
+
+    </script>
+</body>
+</html>
+
+2)program
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        var num = window.prompt("Enter the Number :");
+        var f1 = compose(double, square);
+        var f2 = compose(double, square);
+        function double(num) {
+            return num * 2;
+        }
+        function square(num) {
+            return num * num;
+        }
+        function compose(double, square) {
+            return (square(double(num)))
+        }
+    </script>
+</body>
+</html>
