@@ -1,0 +1,43 @@
+3) program
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+    function isEven(num) 
+	{return num%2==0;}
+    function find(arr,isEven){
+      var i=0;
+      while(i<arr.length){
+        if(isEven(arr[i])==true)
+        return arr[i];
+        i++;
+    }
+}
+var result=find([12, 23, 29, 20],isEven);
+console.log("no is even  ",result);
+    </script>
+</body>
+</html>
+
+4) program
+
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+    function square(num)
+	{return num*num;}
+	function Map(arr,square){
+    var i=0,arr2=[];
+    while(i<arr.length){
+      arr2.push(square(arr[i]));
+      i++;  
+    }
+    return arr2;
+}
+var newArray=Map([1,2,3,5],square);
+console.log("after the newarray ",newArray);
+
+    </script>
+</body>
+</html>
